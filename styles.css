@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-box{
+    margin-top: 300px;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line{
+    position: absolute;
+    width: 50%;
+    background-color: rgb(36, 37, 36);
+    z-index: -1;
+}
+
+.small .line{
+    height: 10px;
+}
+
+.medium .line{
+    height: 4px;
+}
+
+.large .line{
+    height: 2px;
+}
+
+.medium{
+    z-index: 999;
+    background-color: blueviolet;
+}
+
+.large{
+    z-index: 998;
+    background-color: brown;
+}
+
+.small{
+    z-index: 1000;
+    background-color: aqua;
+}
+
+.layer.medium{
+    transform: scale(2);
+}
+
+.layer.large{
+    z-index: 998;
+    transform: scale(3);
+}
+
+
+.top{
+    background-color: blue;
+    opacity: 99%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.middle{
+    width: 100%;
+    background-color: red;
+    opacity: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom{
+    width: 100%;
+    background-color: green;
+    display: flex;
+    opacity: 99%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.layer.medium button{
+    transform: scale(0.5);
+}
+.layer.medium line {
+    height: 10px;
+}
+
+.layer.large button {
+    transform: scale(0.3333333334);
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+button:hover{
+    color: black;
+    opacity: 70%;
+}
