@@ -47,7 +47,7 @@ window.addEventListener("load", () => {
 
         const index = pairs.findIndex(pair => pair[0] === vertex1 && pair[1] === vertex2);
 
-        const rand_val = (index < 6) ? 1 : 10 - Math.floor(Math.random() * 2 * (Math.floor(Math.min(vertex1, vertex2)/6) + 1) + 1 * (Math.floor(Math.min(vertex1, vertex2)/6) + 1))
+        const rand_val = 10 - Math.floor(Math.random() * 2 * (Math.floor(Math.min(vertex1, vertex2)/6) + 1) + 1.25 * (Math.floor(Math.min(vertex1, vertex2)/6) + 1))
         edges[`${Math.min(vertex1, vertex2)} - ${Math.max(vertex1, vertex2)}`] = [0, rand_val]
     })
 
