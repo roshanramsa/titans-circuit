@@ -17,6 +17,7 @@ window.addEventListener("load", () => {
     
     
     const movement = new Audio('./assets/move.mp3');
+    movement.preload = "auto";
     const bg_music = new Audio('./assets/bg.mp3');
     bg_music.loop = true;
     bg_music.volume = 0.5
